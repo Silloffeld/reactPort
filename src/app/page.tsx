@@ -1,103 +1,63 @@
-import Image from "next/image";
+import Sidebar from "./ui/sidebar";
+import SkillBar from "./ui/Skillbar";
+import './globals.css'
+import './ui/fonts.ts'
+import { Alfa_Slab_One } from 'next/font/google';
+
+export const alfa = Alfa_Slab_One({ subsets: ['latin'], weight: ['400'] });
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="flex" id="mainDiv">
+      <Sidebar />
+      <main className="py-2 scroll-smooth ml-64 bg-white rounded ">
+      <section id="mainpage" className="h-[98vh] p-8 bg-[#0F172A] m-3 mt-0 rounded-lg flex items-center justify-center">
+  <div id="text" className="ms-17">
+    <h1 className={`text-9xl mb-8 ${alfa.className} tracking-[0.04em]`}>Sil Loffeld</h1>
+    <h1 className={`text-9xl mb-8 ${alfa.className} tracking-[0.04em]`}>Portfolio</h1>
+    <h1 className={`text-9xl mb-8 ${alfa.className} tracking-[0.04em]`}>(fullstack)software</h1>
+    <h1 className={`text-9xl mb-8 ${alfa.className} tracking-[0.04em]`}>developer in </h1>
+    <h1 className={`text-9xl mb-8 ${alfa.className} tracking-[0.04em]`}>opleiding</h1>
+  </div>
+</section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+        <section id="home" className="h-[50vh] p-8 bg-[#0F172A] m-3 rounded-lg ">
+          <h1 className="text-4xl text-white">skills</h1>
+          <SkillBar label="HTML" percentage={90} color="bg-blue-500" />
+          <SkillBar label="CSS" percentage={80} color="bg-green-500" />
+          <SkillBar label="Tailwind CSS and Bootstrap" percentage={80} color="bg-purple-500" />
+          <SkillBar label="JavaScript" percentage={75} color="bg-yellow-500" />
+          <SkillBar label="React" percentage={40} color="bg-pink-500" />
+          <SkillBar label="PHP" percentage={90} color="bg-red-500" />
+          <SkillBar label="C#" percentage={80} color="bg-indigo-500" />
+        </section>  
+
+        <section id="about" className="h-[25vh] p-8 bg-[#0F172A] m-3 rounded-lg">
+          <h1 className="text-4xl text-white mb-5">About Me</h1>
+          <p className="text-white">
+            Ik ben Sil Loffeld, ik ben Geboren op 7 Maart 2009 en ik zit in het versneltraject van de software developers opleiding.
+            ik heb een erge passie voor het coderen omdat ik het Leuk vind om dingen te leren , mijn doorzettingsvermogen te testen , mijn doelen te behalen , hoe complex het coderen kan zijn en dat ik zelf zo veel kennis kan op doen als op het internet staat omdat dit zo een digitaal onderwerp is.
+          </p>
+        </section>
+
+        <section id="projects" className="h-[25vh] p-8 bg-[#0F172A] m-3 rounded-lg">
+          <h1 className="text-4xl text-white">Projects</h1>
+          <ul className="list-disc text-white pl-5 pt-5">
+            <li>dit portfolio als start/leerproject om react te leren.(next.js framework met tailwind)</li>
+            <li>een webshop als leerjaar 1 eindproject(html,pdo,js,php,bootstrap en css).</li>
+          </ul>
+        </section>
+
+        <section id="contact" className="h-fill p-8 bg-[#0F172A] m-3 rounded-lg ">
+          <h1 className="text-4xl text-white">Contact</h1>
+          <ul className="list-disc text-white pl-5 pt-5">
+          <li className="m-3"><a href="mailto:Silloffeld@gmail.com" >Email mij prive</a></li>
+          <li className="m-3"><a href="mailto:0362067@student.rocvantwente.nl">mijn school mail</a></li>
+          </ul>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
+
