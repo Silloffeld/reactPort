@@ -4,7 +4,7 @@ import './globals.css'
 import './ui/fonts.ts'
 import { Alfa_Slab_One } from 'next/font/google';
 
-export const alfa = Alfa_Slab_One({ subsets: ['latin'], weight: ['400'] });
+const alfa = Alfa_Slab_One({ subsets: ['latin'], weight: ['400'] });
 
 
 export default function Home() {
