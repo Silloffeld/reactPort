@@ -11,19 +11,7 @@ npm run dev
 # or
 yarn dev
 # or
-                  
-
-
-
-
-
-
-
-
-
-
-
-pnpm dev
+ dev
 # or
 bun dev
 
