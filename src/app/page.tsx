@@ -22,15 +22,17 @@ export default function Home() {
   </div>
 </section>
 
-        <section id="home" className="h-[50vh] p-8 bg-[#0F172A] m-3 rounded-lg ">
+        <section id="home" className="h-[60vh] p-8 bg-[#0F172A] m-3 rounded-lg ">
           <h1 className="text-4xl text-white">skills</h1>
           <SkillBar label="HTML" percentage={90} color="bg-blue-500" />
           <SkillBar label="CSS" percentage={80} color="bg-green-500" />
           <SkillBar label="Tailwind CSS and Bootstrap" percentage={80} color="bg-purple-500" />
           <SkillBar label="JavaScript" percentage={75} color="bg-yellow-500" />
-          <SkillBar label="React" percentage={40} color="bg-pink-500" />
+          <SkillBar label="React" percentage={60} color="bg-pink-500" />
           <SkillBar label="PHP" percentage={90} color="bg-red-500" />
           <SkillBar label="C#" percentage={80} color="bg-indigo-500" />
+            <SkillBar label="python" percentage={80} color="bg-orange-500" />
+            <SkillBar label="laravel" percentage={70} color="bg-red-900" />
         </section>  
 
         <section id="about" className="h-[25vh] p-8 bg-[#0F172A] m-3 rounded-lg">
@@ -46,14 +48,7 @@ export default function Home() {
           <ul className="list-disc text-white pl-5 pt-5">
             <li>dit portfolio als start/leerproject om react te leren.(next.js framework met tailwind)</li>
             <li>een webshop als leerjaar 1 eindproject(html,pdo,js,php,bootstrap en css).</li>
-          </ul>
-        </section>
-
-        <section id="contact" className="h-fill p-8 bg-[#0F172A] m-3 rounded-lg ">
-          <h1 className="text-4xl text-white">Contact</h1>
-          <ul className="list-disc text-white pl-5 pt-5">
-          <li className="m-3"><a href="mailto:Silloffeld@gmail.com" >Email mij prive</a></li>
-          <li className="m-3"><a href="mailto:0362067@student.rocvantwente.nl">mijn school mail</a></li>
+              <li> een password manager (laravel backend en react frontend).</li>
           </ul>
         </section>
       </main>
