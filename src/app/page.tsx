@@ -15,11 +15,11 @@ export default function Home() {
             <main className="py-2 scroll-smooth md:ml-64 w-full bg-white rounded">
                 <section id="mainpage" className="min-h-[60vh] md:h-[98vh] p-4 md:p-8 bg-[#0F172A] m-3 mt-0 rounded-lg flex items-center justify-center">
                     <div id="text" className="ms-0 md:ms-17 text-center md:text-left">
-                        <h1 className={`text-4xl sm:text-6xl md:text-7xl lg:text-9xl mb-4 md:mb-8 ${alfa.className} tracking-[0.04em]`}>Sil Loffeld</h1>
-                        <h1 className={`text-4xl sm:text-6xl md:text-7xl lg:text-9xl mb-4 md:mb-8 ${alfa.className} tracking-[0.04em]`}>Portfolio</h1>
-                        <h1 className={`text-3xl sm:text-5xl md:text-6xl lg:text-8xl mb-4 md:mb-8 ${alfa.className} tracking-[0.04em]`}>(fullstack)software</h1>
-                        <h1 className={`text-3xl sm:text-5xl md:text-6xl lg:text-8xl mb-4 md:mb-8 ${alfa.className} tracking-[0.04em]`}>developer in </h1>
-                        <h1 className={`text-3xl sm:text-5xl md:text-6xl lg:text-8xl mb-4 md:mb-8 ${alfa.className} tracking-[0.04em]`}>opleiding</h1>
+                        <h1 className={`text-4xl sm:text-6xl md:text-7xl text-white lg:text-9xl mb-4 md:mb-8 ${alfa.className} tracking-[0.04em]`}>Sil Loffeld</h1>
+                        <h1 className={`text-4xl sm:text-6xl md:text-7xl text-white lg:text-9xl mb-4 md:mb-8 ${alfa.className} tracking-[0.04em]`}>Portfolio</h1>
+                        <h1 className={`text-3xl sm:text-5xl md:text-6xl text-white lg:text-8xl mb-4 md:mb-8 ${alfa.className} tracking-[0.04em]`}>(fullstack)software</h1>
+                        <h1 className={`text-3xl sm:text-5xl md:text-6xl text-white lg:text-8xl mb-4 md:mb-8 ${alfa.className} tracking-[0.04em]`}>developer in </h1>
+                        <h1 className={`text-3xl sm:text-5xl md:text-6xl text-white lg:text-8xl mb-4 md:mb-8 ${alfa.className} tracking-[0.04em]`}>opleiding</h1>
                     </div>
                 </section>
 
