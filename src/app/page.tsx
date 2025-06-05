@@ -42,7 +42,7 @@ export default function Home() {
                     <h1 className="text-3xl md:text-4xl text-white mb-5">About Me</h1>
                     <p className="text-white">
                         Ik ben Sil Loffeld, ik ben Geboren op 7 Maart 2009 en ik zit in het versneltraject van de software developers opleiding.
-                        ik heb een erge passie voor het coderen omdat ik het Leuk vind om dingen te leren, mijn doorzettingsvermogen te testen, mijn doelen te behalen, hoe complex het coderen kan zijn en d[...]
+                        Ik heb een erge passie voor het coderen omdat ik het leuk vind om dingen te leren, mijn doorzettingsvermogen te testen, mijn doelen te behalen ,hoe complex het coderen kan zijn en mijn grenzen nog verder te verleggen.
                     </p>
                 </section>
 
