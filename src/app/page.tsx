@@ -1,5 +1,4 @@
-import Sidebar from "./ui/sidebar";
-import MobileNav from "./ui/MobileNav";
+
 import SkillBar from "./ui/Skillbar";
 import './globals.css'
 import './ui/fonts.ts'
