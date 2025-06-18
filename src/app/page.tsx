@@ -10,8 +10,6 @@ const alfa = Alfa_Slab_One({ subsets: ['latin'], weight: ['400'] });
 export default function Home() {
     return (
         <div className="flex" id="mainDiv">
-            <Sidebar />
-            <MobileNav />
             <main className="py-2 scroll-smooth md:ml-64 w-full bg-white rounded">
                 <section id="mainpage" className="min-h-[60vh] md:h-[98vh] p-4 md:p-8 bg-[#0F172A] m-3 mt-0 rounded-lg flex items-center justify-center">
                     <div id="text" className="ms-0 md:ms-17 text-center md:text-left">
