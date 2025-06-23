@@ -26,11 +26,11 @@ export default function Home() {
                         <SkillBar label="HTML" percentage={90} color="bg-blue-500" />
                         <SkillBar label="CSS" percentage={80} color="bg-green-500" />
                         <SkillBar label="Tailwind CSS and Bootstrap" percentage={80} color="bg-purple-500" />
-                        <SkillBar label="JavaScript" percentage={75} color="bg-yellow-500" />
-                        <SkillBar label="React" percentage={60} color="bg-pink-500" />
+                        <SkillBar label="JavaScript" percentage={80} color="bg-yellow-500" />
+                        <SkillBar label="React" percentage={80} color="bg-pink-500" />
                         <SkillBar label="PHP" percentage={90} color="bg-red-500" />
                         <SkillBar label="C#" percentage={80} color="bg-indigo-500" />
-                        <SkillBar label="python" percentage={80} color="bg-orange-500" />
+                        <SkillBar label="python" percentage={50} color="bg-orange-500" />
                         <SkillBar label="laravel" percentage={70} color="bg-red-900" />
                     </div>
                 </section>
