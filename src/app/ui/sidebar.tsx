@@ -4,7 +4,7 @@ import { FaEnvelope, FaSchool, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Sidebar() {
     return (
-        <aside className="hidden md:flex flex-col items-center w-56 rounded-2xl mt-4 bg-gradient-to-br from-slate-900 to-slate-800 text-white h-[98vh] p-6 fixed left-4 z-50 shadow-xl">
+        <aside className="hidden md:flex flex-col items-center w-56 rounded-2xl mt-4 bg-gradient-to-br from-slate-900 to-slate-800 text-white h-[90vh] p-6 fixed left-4 z-50 shadow-xl">
             <Image
                 src="/groep.jpg"
                 width={110}
